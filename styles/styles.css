@@ -12,6 +12,7 @@ html {
 }
 body {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
   text-decoration: none;
@@ -22,6 +23,7 @@ a {
 header {
   width: 100%;
   height: 6rem;
+  border: 3px solid #000; /*quitar luego*/
 }
 header nav {
   display: flex;
@@ -34,7 +36,8 @@ header nav {
   align-items: center;
   list-style: none;
   width: 25rem;
-  /* height: inherit; */
+  height: 5.7rem;
+  border: 1px solid #000; /*quitar luego*/
 }
 #iconNav {
   background-image: url("../img/icons8-menú.svg");
@@ -50,4 +53,91 @@ header nav {
 }
 a:hover {
   text-decoration: underline;
+}
+/**Main styles*/
+main {
+  margin-top: 15rem;
+  text-align: center;
+  border: 3px solid #000; /*quitar luego*/
+}
+.mainLogo {
+  width: 45rem;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+  border: 1px solid #000; /*quitar luego*/
+}
+.mainLogo img {
+  height: 9.5rem;
+  width: 27.2rem;
+  /* widows: 27.2rem; */
+  border: 1px solid #000; /*quitar luego*/
+}
+.mainContainer {
+  width: 45rem;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+  /* border: 2px solid #000;  */
+  /*quitar luego*/
+}
+.mainContainer--secondary {
+  width: 45rem;
+  border-radius: 5rem;
+  border: 1px solid #dfe1e5; /*no quitar xd*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer--secondary input {
+  width: 40rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+}
+.mainContainer--secondary:hover {
+  box-shadow: 0 5px 20px 0 #20212447;
+  border-color: #dfe1e500;
+}
+.searchIcon {
+  background-image: url("../img/search-icons-8.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+.microIcon {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.mainButtons {
+  width: 45rem;
+  margin: 0 auto;
+  border: 1px solid #000; /*borrar luego*/
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.mainButtons button {
+  height: 3.6rem;
+  background-color: #f5f5f5;
+  border: 0;
+  font-size: 1.4rem;
+  color: #5f6368;
+  border-radius: 0.8rem;
+  padding: 0 1.5rem;
+  /* margin-left: 1.5rem; */
+}
+.mainButtons button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
