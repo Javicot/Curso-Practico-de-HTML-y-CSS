@@ -19,11 +19,13 @@ a {
   cursor: pointer;
   color: #000;
 }
+li {
+  list-style: none;
+}
 /**Header styles*/
 header {
   width: 100%;
   height: 6rem;
-  border: 3px solid #000; /*quitar luego*/
 }
 header nav {
   display: flex;
@@ -37,7 +39,6 @@ header nav {
   list-style: none;
   width: 25rem;
   height: 5.7rem;
-  border: 1px solid #000; /*quitar luego*/
 }
 #iconNav {
   background-image: url("../img/icons8-menú.svg");
@@ -54,30 +55,26 @@ header nav {
 a:hover {
   text-decoration: underline;
 }
+
 /**Main styles*/
 main {
   margin-top: 15rem;
   text-align: center;
-  border: 3px solid #000; /*quitar luego*/
 }
 .mainLogo {
   width: 45rem;
   margin: 0 auto;
   margin-bottom: 3.5rem;
-  border: 1px solid #000; /*quitar luego*/
 }
 .mainLogo img {
   height: 9.5rem;
   width: 27.2rem;
   /* widows: 27.2rem; */
-  border: 1px solid #000; /*quitar luego*/
 }
 .mainContainer {
   width: 45rem;
   margin: 0 auto;
   margin-bottom: 3.5rem;
-  /* border: 2px solid #000;  */
-  /*quitar luego*/
 }
 .mainContainer--secondary {
   width: 45rem;
@@ -104,7 +101,8 @@ main {
   background-size: contain;
   width: 1.8rem;
   height: 1.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.9rem;
+  margin-right: 0.7rem;
 }
 .microIcon {
   background-image: url("https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png");
@@ -114,14 +112,15 @@ main {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  margin-right: 0.6rem;
 }
 .mainButtons {
   width: 45rem;
   margin: 0 auto;
-  border: 1px solid #000; /*borrar luego*/
   display: flex;
   justify-content: center;
   gap: 3rem;
+  height: 25rem;
 }
 
 .mainButtons button {
@@ -132,7 +131,7 @@ main {
   color: #5f6368;
   border-radius: 0.8rem;
   padding: 0 1.5rem;
-  /* margin-left: 1.5rem; */
+  /* margin-bottom: 25rem; */
 }
 .mainButtons button:hover {
   border: 1px solid #c6c6c6;
@@ -140,4 +139,34 @@ main {
   color: #222;
   background-color: #f2f2f2;
   cursor: pointer;
+}
+/**Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-top: 1px solid #c6c6c6;
+  width: 100%;
+  height: 7rem;
+  bottom: 0;
+  font-size: 1.3rem;
+}
+.footer-1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+.footer-2 {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 444px) {
+  .footer-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
